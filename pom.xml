@@ -551,7 +551,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-surefire-plugin</artifactId>
-          <version>2.20.1</version>
+          <version>2.99.0-SNAPSHOT</version>
         </plugin>
 
         <plugin>
@@ -1079,6 +1079,7 @@
                 Notice the @ instead of the $ as prefix? That's late evaluation.
               -->
               <argLine>-Xmx256m @{surefireArgLine}</argLine>
+              <runOrder>InvalidOrder</runOrder>
             </configuration>
           </plugin>
 
